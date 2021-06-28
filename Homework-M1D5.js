@@ -52,19 +52,22 @@ function boundary(x) {
 console.log(boundary(10));
 console.log(boundary(90));
 
-/* EXERCISE 5 - NOT COMPLETE
-Write a function "strivify" which accepts a string.
+console.log("---EXERCISE 5---")
+
+/* Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 
 function strivify(str) {
-if (str === "Strive") {
-    return "Strive"
+if (str.startsWith("Strive")) {
+    return str
 }
 else {
-    return 
+    return "Strive" + " " + str
 }
 }
+console.log(strivify("Lele"))
+console.log("")
 
 console.log("---EXERCISE 6---")
 /* Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
@@ -133,3 +136,11 @@ const giveMeRandom = function(n) {
     return arrWithNums;
   }
   console.log(giveMeRandom(6));
+
+console.log("------------------")
+
+ let num = 400
+ let perc = 20
+ let percentage = num / 100 * perc
+
+ console.log(percentage)
